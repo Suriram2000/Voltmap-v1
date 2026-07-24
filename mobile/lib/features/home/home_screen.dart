@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../discovery/presentation/discovery_screen.dart';
 import '../favorites/favorites_screen.dart';
 import '../map/map_screen.dart';
+import '../profile/presentation/profile_screen.dart';
 import '../trips/presentation/trip_planner_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     MapScreen(),
     TripPlannerScreen(),
     FavoritesScreen(),
-    _ComingSoon(title: 'Profile', icon: Icons.person),
+    ProfileScreen(),
   ];
 
   @override
@@ -42,33 +43,6 @@ class _HomeScreenState extends State<HomeScreen> {
           NavigationDestination(icon: Icon(Icons.favorite), label: 'Favorites'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
         ],
-      ),
-    );
-  }
-}
-
-class _ComingSoon extends StatelessWidget {
-  const _ComingSoon({
-    required this.title,
-    required this.icon,
-  });
-
-  final String title;
-  final IconData icon;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, size: 64),
-            const SizedBox(height: 12),
-            Text('$title module coming next'),
-          ],
-        ),
       ),
     );
   }

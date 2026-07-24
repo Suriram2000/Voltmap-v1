@@ -1,0 +1,21 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "REPLACE_WITH_FIREBASE_PROJECT_ID",
+          "appId": "REPLACE_WITH_ANDROID_APP_ID",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "REPLACE_WITH_FIREBASE_PROJECT_ID",
+          "appId": "REPLACE_WITH_IOS_APP_ID",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      }
+    }
+  }
+}
