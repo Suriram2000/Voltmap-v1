@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/navigation/external_navigation_service.dart';
 import '../../../shared/models/charging_station.dart';
 
 class StationDetailsScreen extends StatelessWidget {
@@ -16,6 +17,8 @@ class StationDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const navigationService = ExternalNavigationService();
+
     return Scaffold(
       appBar: AppBar(
         title: Text(station.network),
@@ -54,40 +57,42 @@ class StationDetailsScreen extends StatelessWidget {
           const SizedBox(height: 6),
           Text(station.address),
           const SizedBox(height: 20),
-          _DetailRow(
-            icon: Icons.bolt,
-            title: 'Maximum power',
-            value: '${station.maxPowerKw} kW',
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const CircleAvatar(child: Icon(Icons.bolt)),
+            title: const Text('Maximum power'),
+            subtitle: Text('${station.maxPowerKw} kW'),
           ),
-          _DetailRow(
-            icon: Icons.electrical_services,
-            title: 'Connectors',
-            value: station.connectorSummary,
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const CircleAvatar(
+              child: Icon(Icons.electrical_services),
+            ),
+            title: const Text('Connectors'),
+            subtitle: Text(station.connectorSummary),
           ),
-          _DetailRow(
-            icon: Icons.currency_rupee,
-            title: 'Price',
-            value: '₹${station.pricePerKwh.toStringAsFixed(0)} per kWh',
-          ),
-          _DetailRow(
-            icon: Icons.schedule,
-            title: 'Hours',
-            value: station.isOpen24Hours ? 'Open 24 hours' : 'Limited hours',
-          ),
-          _DetailRow(
-            icon: Icons.ev_station,
-            title: 'Availability',
-            value:
-                '${station.availableConnectors} of ${station.totalConnectors} connectors',
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: const CircleAvatar(child: Icon(Icons.currency_rupee)),
+            title: const Text('Price'),
+            subtitle: Text(
+              '₹${station.pricePerKwh.toStringAsFixed(0)} per kWh',
+            ),
           ),
           const SizedBox(height: 24),
           FilledButton.icon(
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Turn-by-turn navigation will be connected next.'),
-                ),
-              );
+            onPressed: () async {
+              try {
+                await navigationService.openDirections(
+                  latitude: station.position.latitude,
+                  longitude: station.position.longitude,
+                );
+              } on Exception catch (error) {
+                if (!context.mounted) return;
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(error.toString())),
+                );
+              }
             },
             icon: const Icon(Icons.navigation),
             label: const Padding(
@@ -97,28 +102,6 @@ class StationDetailsScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _DetailRow extends StatelessWidget {
-  const _DetailRow({
-    required this.icon,
-    required this.title,
-    required this.value,
-  });
-
-  final IconData icon;
-  final String title;
-  final String value;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      leading: CircleAvatar(child: Icon(icon)),
-      title: Text(title),
-      subtitle: Text(value),
     );
   }
 }

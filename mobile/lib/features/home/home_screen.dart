@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../discovery/presentation/discovery_screen.dart';
 import '../favorites/favorites_screen.dart';
 import '../map/map_screen.dart';
+import '../trips/presentation/trip_planner_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final _pages = const [
     DiscoveryScreen(),
     MapScreen(),
-    _ComingSoon(title: 'Trips', icon: Icons.route),
+    TripPlannerScreen(),
     FavoritesScreen(),
     _ComingSoon(title: 'Profile', icon: Icons.person),
   ];
@@ -47,7 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class _ComingSoon extends StatelessWidget {
-  const _ComingSoon({required this.title, required this.icon});
+  const _ComingSoon({
+    required this.title,
+    required this.icon,
+  });
 
   final String title;
   final IconData icon;
