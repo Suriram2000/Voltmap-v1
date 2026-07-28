@@ -1,0 +1,1 @@
+Checklist for Google Play Store submission.
