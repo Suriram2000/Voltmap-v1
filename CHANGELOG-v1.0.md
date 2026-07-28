@@ -1,0 +1,6 @@
+- Verify Firebase
+- Verify Maps API
+- Verify payment gateway
+- Verify notifications
+- Verify monitoring
+- Publish release
