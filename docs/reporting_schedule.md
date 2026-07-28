@@ -1,0 +1,1 @@
+Placeholder for daily, weekly and monthly scheduled reporting configuration.
