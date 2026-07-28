@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class AnalyticsSummaryCard extends StatelessWidget{const AnalyticsSummaryCard({super.key,required this.title,required this.value}); final String title,value; @override Widget build(BuildContext c)=>Card(child:ListTile(title:Text(title),trailing:Text(value)));}

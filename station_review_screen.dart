@@ -1,0 +1,1 @@
+import '../models/dashboard_metrics.dart'; abstract interface class AdminRepository{Future<DashboardMetrics> loadMetrics();}

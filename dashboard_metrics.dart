@@ -1,0 +1,1 @@
+import '../models/dashboard_metrics.dart'; import 'admin_repository.dart'; class MockAdminRepository implements AdminRepository{Future<DashboardMetrics> loadMetrics() async=>const DashboardMetrics(users:1200,sessions:5400,stations:680,revenueCents:2450000);}
