@@ -1,0 +1,1 @@
+import '../models/live_station_status.dart'; abstract interface class ProviderAdapter{String get name; Future<List<LiveStationStatus>> fetchStatuses();}

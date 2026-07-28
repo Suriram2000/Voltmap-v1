@@ -1,0 +1,1 @@
+import 'provider_adapter.dart'; import '../models/live_station_status.dart'; class TataPowerAdapter implements ProviderAdapter{String get name=>'Tata Power EZ Charge'; Future<List<LiveStationStatus>> fetchStatuses() async=>const[];}

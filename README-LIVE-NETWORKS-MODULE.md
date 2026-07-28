@@ -1,0 +1,1 @@
+import 'provider_adapter.dart'; import '../models/live_station_status.dart'; class ChargeZoneAdapter implements ProviderAdapter{String get name=>'ChargeZone'; Future<List<LiveStationStatus>> fetchStatuses() async=>const[];}

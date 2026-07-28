@@ -1,0 +1,1 @@
+import 'provider_adapter.dart'; import '../models/live_station_status.dart'; class StatiqAdapter implements ProviderAdapter{String get name=>'Statiq'; Future<List<LiveStationStatus>> fetchStatuses() async=>const[];}

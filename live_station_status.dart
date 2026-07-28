@@ -1,0 +1,1 @@
+import 'provider_adapter.dart'; class UnifiedNetworkRepository{UnifiedNetworkRepository(this.adapters); final List<ProviderAdapter> adapters;}

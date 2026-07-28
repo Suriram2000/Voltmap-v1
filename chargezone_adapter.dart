@@ -1,0 +1,1 @@
+import 'provider_adapter.dart'; import '../models/live_station_status.dart'; class JioBpAdapter implements ProviderAdapter{String get name=>'Jio-bp Pulse'; Future<List<LiveStationStatus>> fetchStatuses() async=>const[];}
