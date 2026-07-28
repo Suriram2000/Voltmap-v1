@@ -1,0 +1,1 @@
+class BootNotification{const BootNotification({required this.vendor,required this.model});final String vendor,model;}

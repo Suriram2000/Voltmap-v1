@@ -1,0 +1,1 @@
+class HeartbeatService{Future<void> sendHeartbeat() async{}}

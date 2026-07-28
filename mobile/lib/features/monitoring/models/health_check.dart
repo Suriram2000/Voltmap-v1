@@ -1,0 +1,1 @@
+class HealthCheck{const HealthCheck({required this.service,required this.healthy});final String service;final bool healthy;}

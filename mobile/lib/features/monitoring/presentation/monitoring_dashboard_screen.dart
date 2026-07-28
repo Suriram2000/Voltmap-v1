@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class MonitoringDashboardScreen extends StatelessWidget{const MonitoringDashboardScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Production Monitoring')),body:const Center(child:Text('System health, analytics and crash reporting dashboard')));}

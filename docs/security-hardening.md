@@ -1,0 +1,1 @@
+Security checklist for secrets, API keys, TLS, authentication, and least-privilege access.

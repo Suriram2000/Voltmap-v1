@@ -1,0 +1,10 @@
+- Login
+- Search stations
+- Route planning
+- QR charging
+- Wallet
+- Notifications
+- Offline mode
+- Fleet
+- Admin
+- AI routing

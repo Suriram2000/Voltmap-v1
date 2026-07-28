@@ -1,0 +1,1 @@
+class ReleaseChecklist{const ReleaseChecklist({this.items=const[]});final List<String> items;}

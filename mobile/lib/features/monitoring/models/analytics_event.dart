@@ -1,0 +1,1 @@
+class AnalyticsEvent{const AnalyticsEvent({required this.name,required this.timestamp});final String name;final DateTime timestamp;}

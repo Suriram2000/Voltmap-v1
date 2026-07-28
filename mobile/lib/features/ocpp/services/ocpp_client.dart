@@ -1,0 +1,1 @@
+abstract interface class OcppClient{Future<void> connect(Uri uri);Future<void> disconnect();}

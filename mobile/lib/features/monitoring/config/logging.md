@@ -1,0 +1,1 @@
+Placeholder for Datadog, Firebase Crashlytics, OpenTelemetry and structured logging configuration.

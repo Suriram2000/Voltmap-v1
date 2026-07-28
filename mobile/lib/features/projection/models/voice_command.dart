@@ -1,0 +1,1 @@
+class VoiceCommand{const VoiceCommand({required this.text});final String text;}

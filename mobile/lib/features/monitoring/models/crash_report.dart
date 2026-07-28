@@ -1,0 +1,1 @@
+class CrashReport{const CrashReport({required this.id,required this.message});final String id,message;}

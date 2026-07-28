@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class ProjectionSettingsScreen extends StatelessWidget{const ProjectionSettingsScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Vehicle Projection')),body:const ListTile(title:Text('Android Auto & Apple CarPlay')));}

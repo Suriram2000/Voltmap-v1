@@ -1,0 +1,1 @@
+class TransactionEvent{const TransactionEvent({required this.id,required this.type});final String id,type;}

@@ -1,0 +1,1 @@
+class TestCase{const TestCase({required this.id,required this.name,this.passed=false});final String id,name;final bool passed;}

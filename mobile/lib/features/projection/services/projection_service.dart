@@ -1,0 +1,1 @@
+abstract interface class ProjectionService{Future<void> startNavigation(String stationId);}

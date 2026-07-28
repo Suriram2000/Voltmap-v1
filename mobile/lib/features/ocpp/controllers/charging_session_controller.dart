@@ -1,0 +1,1 @@
+class ChargingSessionController{Future<void> startSession(String chargerId) async{} Future<void> stopSession() async{}}

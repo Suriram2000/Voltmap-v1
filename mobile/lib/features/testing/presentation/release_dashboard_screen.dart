@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class ReleaseDashboardScreen extends StatelessWidget{const ReleaseDashboardScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Release Dashboard')),body:const Center(child:Text('QA, smoke tests and release readiness')));}

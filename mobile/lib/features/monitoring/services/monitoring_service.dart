@@ -1,0 +1,1 @@
+import '../models/health_check.dart'; abstract interface class MonitoringService{Future<List<HealthCheck>> healthChecks();}

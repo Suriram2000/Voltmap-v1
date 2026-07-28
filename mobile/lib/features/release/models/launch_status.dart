@@ -1,0 +1,1 @@
+class LaunchStatus{const LaunchStatus({required this.ready,required this.version});final bool ready;final String version;}

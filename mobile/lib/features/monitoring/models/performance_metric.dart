@@ -1,0 +1,1 @@
+class PerformanceMetric{const PerformanceMetric({required this.name,required this.value});final String name;final double value;}

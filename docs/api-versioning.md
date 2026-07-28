@@ -1,0 +1,1 @@
+REST/GraphQL versioning guidance for future VoltMap APIs.

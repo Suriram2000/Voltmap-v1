@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class DrivingDashboardCard extends StatelessWidget{const DrivingDashboardCard({super.key}); @override Widget build(BuildContext c)=>const Card(child:ListTile(title:Text('Driving Dashboard'),subtitle:Text('Charging stop, ETA and battery summary')));}

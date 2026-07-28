@@ -1,0 +1,1 @@
+class WebSocketManager{Future<void> open() async{} Future<void> close() async{}}

@@ -1,6 +1,3 @@
-- Verify Firebase
-- Verify Maps API
-- Verify payment gateway
-- Verify notifications
-- Verify monitoring
-- Publish release
+# VoltMap v1.0
+
+Initial production release template.

@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class ServiceStatusCard extends StatelessWidget{const ServiceStatusCard({super.key,required this.service,required this.healthy});final String service;final bool healthy; @override Widget build(BuildContext c)=>Card(child:ListTile(title:Text(service),trailing:Icon(healthy?Icons.check_circle:Icons.error)));}
