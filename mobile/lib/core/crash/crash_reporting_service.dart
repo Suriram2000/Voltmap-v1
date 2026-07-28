@@ -1,0 +1,1 @@
+abstract interface class CrashReportingService{Future<void> record(Object error, StackTrace stack);}

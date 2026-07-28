@@ -1,0 +1,1 @@
+import 'crash_reporting_service.dart'; class FirebaseCrashReportingService implements CrashReportingService{Future<void> record(Object error, StackTrace stack) async{}}

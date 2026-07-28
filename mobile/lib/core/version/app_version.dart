@@ -1,0 +1,1 @@
+class AppVersion{final String version,build;const AppVersion(this.version,this.build);}

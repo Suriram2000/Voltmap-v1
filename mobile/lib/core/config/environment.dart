@@ -1,0 +1,1 @@
+class Environment{static const apiBaseUrl='https://api.example.com';static const appName='VoltMap';}
