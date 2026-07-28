@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class RecommendationCard extends StatelessWidget{const RecommendationCard({super.key,required this.title,required this.subtitle});final String title,subtitle; @override Widget build(BuildContext c)=>Card(child:ListTile(title:Text(title),subtitle:Text(subtitle),leading:const Icon(Icons.auto_awesome)));}

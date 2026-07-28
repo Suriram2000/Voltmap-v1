@@ -1,0 +1,1 @@
+import '../models/route_score.dart'; class BasicRouteScorer{RouteScore score({required double distanceKm,required double availability})=>RouteScore(score:(availability*100)-distanceKm/10,reason:'Higher availability and shorter distance');}
