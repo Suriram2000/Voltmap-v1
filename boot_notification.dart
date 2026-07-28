@@ -1,0 +1,1 @@
+Placeholder for diagnostics, firmware updates, and smart charging support.
