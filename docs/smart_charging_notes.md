@@ -1,0 +1,1 @@
+Placeholder for OCPP smart charging profiles, utility integrations, and demand response.

@@ -1,0 +1,1 @@
+class ChargingProfile{const ChargingProfile({required this.id,required this.maxKw});final String id;final double maxKw;}

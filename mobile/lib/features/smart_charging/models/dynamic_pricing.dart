@@ -1,0 +1,1 @@
+class DynamicPricing{const DynamicPricing({required this.pricePerKwh});final double pricePerKwh;}

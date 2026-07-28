@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class SmartChargingDashboard extends StatelessWidget{const SmartChargingDashboard({super.key});@override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Smart Charging')),body:const Center(child:Text('AI scheduling, load balancing and dynamic pricing')));}

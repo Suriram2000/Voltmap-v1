@@ -1,0 +1,1 @@
+class PeakOptimizer{Future<void> optimize() async{}}

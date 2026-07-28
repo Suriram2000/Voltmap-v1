@@ -1,0 +1,1 @@
+class LoadBalancing{const LoadBalancing({required this.siteId,required this.availableKw});final String siteId;final double availableKw;}
