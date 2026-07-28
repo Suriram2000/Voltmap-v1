@@ -1,0 +1,1 @@
+abstract interface class TranslationRepository{Future<Map<String,String>> load(String locale);}
