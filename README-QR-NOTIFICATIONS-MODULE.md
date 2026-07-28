@@ -1,33 +1,30 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+# VoltMap QR Scanner and Notifications Module
 
-import '../../settings/application/settings_providers.dart';
+Included:
 
-class NotificationSettingsTile extends ConsumerWidget {
-  const NotificationSettingsTile({super.key});
+- Camera-based QR scanner screen
+- QR payload parser and validation
+- Charger-code confirmation flow
+- Firebase Cloud Messaging service
+- Foreground notification handling
+- Notification preferences provider
+- Charger availability alert model
+- Android camera and notification permissions
+- iOS camera permission text
+- Updated charging start screen
+- Updated `pubspec.yaml` dependency additions
 
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final settings = ref.watch(appSettingsProvider);
+## GitHub check-in
 
-    return settings.maybeWhen(
-      data: (value) => SwitchListTile(
-        value: value.notificationsEnabled,
-        secondary: const Icon(Icons.notifications_active),
-        title: const Text('Charging notifications'),
-        subtitle: const Text(
-          'Receive booking reminders and charging updates',
-        ),
-        onChanged: (enabled) {
-          ref.read(appSettingsProvider.notifier).update(
-                value.copyWith(notificationsEnabled: enabled),
-              );
-        },
-      ),
-      orElse: () => const ListTile(
-        leading: CircularProgressIndicator(),
-        title: Text('Loading notification settings'),
-      ),
-    );
-  }
-}
+```bash
+git add .
+git commit -m "feat: add QR scanner and charger notifications"
+git push
+```
+
+No local Flutter commands are required while you are only checking files into GitHub.
+
+## Later configuration
+
+When Firebase is connected, add real platform configuration files and enable
+Firebase Cloud Messaging for Android and iOS.

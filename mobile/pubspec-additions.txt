@@ -1,4 +1,6 @@
 Add these dependencies to mobile/pubspec.yaml:
 
-shared_preferences: ^2.3.2
-connectivity_plus: ^6.0.5
+mobile_scanner: ^5.2.3
+firebase_messaging: ^15.1.0
+flutter_local_notifications: ^17.2.3
+permission_handler: ^11.3.1
