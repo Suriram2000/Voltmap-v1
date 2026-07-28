@@ -1,0 +1,1 @@
+Guide for logos, colors, fonts, icons, splash screens, and tenant-specific assets.

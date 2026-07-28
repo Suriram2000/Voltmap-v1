@@ -1,0 +1,1 @@
+abstract interface class BrandingService{Future<void> initialize(String tenantId);}
