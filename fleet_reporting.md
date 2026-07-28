@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class FleetOperationsScreen extends StatelessWidget{const FleetOperationsScreen({super.key});@override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Fleet Operations')),body:const Center(child:Text('Fleet health, assignments and maintenance')));}
