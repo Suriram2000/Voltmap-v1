@@ -1,0 +1,1 @@
+class LanguagePreference{const LanguagePreference({required this.locale});final String locale;}

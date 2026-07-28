@@ -1,0 +1,1 @@
+class DashboardMetrics{const DashboardMetrics({required this.sessions,required this.revenue});final int sessions;final double revenue;}

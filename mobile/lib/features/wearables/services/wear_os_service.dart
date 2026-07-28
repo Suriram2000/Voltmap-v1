@@ -1,0 +1,1 @@
+abstract interface class WearOsService{Future<void> sync();}

@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class BrandingSettingsScreen extends StatelessWidget{const BrandingSettingsScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('White Label')),body:const Center(child:Text('Manage branding and tenant configuration')));}

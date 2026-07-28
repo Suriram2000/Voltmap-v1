@@ -1,0 +1,1 @@
+class Tenant{const Tenant({required this.id,required this.name});final String id,name;}

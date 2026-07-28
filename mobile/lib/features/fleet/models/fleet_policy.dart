@@ -1,0 +1,1 @@
+class FleetPolicy{const FleetPolicy({required this.maxSpeed,required this.minBattery});final int maxSpeed;final int minBattery;}

@@ -1,0 +1,1 @@
+class AssetLoader{Future<String> logoPath(String tenantId) async=>'assets/logo.png';}

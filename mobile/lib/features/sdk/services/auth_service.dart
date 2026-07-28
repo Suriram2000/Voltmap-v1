@@ -1,0 +1,1 @@
+class ApiAuthService{Future<String> token() async=>'token';}

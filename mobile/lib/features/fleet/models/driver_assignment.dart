@@ -1,0 +1,1 @@
+class DriverAssignment{const DriverAssignment({required this.driverId,required this.vehicleId});final String driverId;final String vehicleId;}

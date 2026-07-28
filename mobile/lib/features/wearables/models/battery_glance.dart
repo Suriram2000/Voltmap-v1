@@ -1,0 +1,1 @@
+class BatteryGlance{const BatteryGlance({required this.percent,required this.rangeKm});final int percent;final double rangeKm;}

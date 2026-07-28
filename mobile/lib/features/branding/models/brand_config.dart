@@ -1,0 +1,1 @@
+class BrandConfig{const BrandConfig({required this.name,required this.primaryColor});final String name;final int primaryColor;}

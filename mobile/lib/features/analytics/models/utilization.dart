@@ -1,0 +1,1 @@
+class Utilization{const Utilization({required this.stationId,required this.percent});final String stationId;final double percent;}

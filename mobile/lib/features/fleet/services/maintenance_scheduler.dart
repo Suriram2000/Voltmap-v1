@@ -1,0 +1,1 @@
+class MaintenanceScheduler{Future<void> schedule(String vehicleId) async{}}

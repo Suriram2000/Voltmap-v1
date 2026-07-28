@@ -1,0 +1,1 @@
+class ThemeManager{Future<void> applyBrand(String tenantId) async{}}

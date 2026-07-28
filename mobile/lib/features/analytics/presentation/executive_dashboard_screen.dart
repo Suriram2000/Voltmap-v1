@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class ExecutiveDashboardScreen extends StatelessWidget{const ExecutiveDashboardScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Executive Analytics')),body:const Center(child:Text('Revenue, utilization and charging analytics')));}

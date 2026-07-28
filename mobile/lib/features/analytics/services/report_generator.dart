@@ -1,0 +1,1 @@
+abstract interface class ReportGenerator{Future<void> generateMonthlyReport();}

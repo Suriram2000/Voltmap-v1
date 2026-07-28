@@ -1,0 +1,1 @@
+abstract interface class LocalizationService{Future<void> changeLocale(String locale);}

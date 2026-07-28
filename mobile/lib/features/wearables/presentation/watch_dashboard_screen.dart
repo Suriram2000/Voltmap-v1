@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class WatchDashboardScreen extends StatelessWidget{const WatchDashboardScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Wearables')),body:const Center(child:Text('Battery, charging status and trip updates for Wear OS & Apple Watch')));}

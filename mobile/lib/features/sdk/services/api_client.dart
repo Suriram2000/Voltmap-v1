@@ -1,0 +1,1 @@
+abstract interface class ApiClient{Future<String> get(String path);}

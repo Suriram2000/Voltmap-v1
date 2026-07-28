@@ -1,0 +1,1 @@
+abstract interface class AppleWatchService{Future<void> sync();}

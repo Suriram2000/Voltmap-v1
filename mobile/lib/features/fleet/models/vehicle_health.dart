@@ -1,0 +1,1 @@
+class VehicleHealth{const VehicleHealth({required this.vin,required this.score});final String vin;final double score;}

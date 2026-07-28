@@ -1,0 +1,1 @@
+class AccessibilitySettings{const AccessibilitySettings({required this.largeText,required this.highContrast});final bool largeText;final bool highContrast;}

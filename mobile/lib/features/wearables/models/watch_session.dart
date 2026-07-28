@@ -1,0 +1,1 @@
+class WatchSession{const WatchSession({required this.stationId,required this.battery});final String stationId;final int battery;}

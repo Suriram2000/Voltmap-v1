@@ -1,0 +1,1 @@
+import 'package:flutter/material.dart'; class EnterpriseIntegrationScreen extends StatelessWidget{const EnterpriseIntegrationScreen({super.key}); @override Widget build(BuildContext c)=>Scaffold(appBar:AppBar(title:const Text('Enterprise Integrations')),body:const Center(child:Text('API, SDK and Webhook Management')));}

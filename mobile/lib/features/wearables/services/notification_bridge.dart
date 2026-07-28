@@ -1,0 +1,1 @@
+class NotificationBridge{Future<void> pushChargingAlert(String message) async{}}
