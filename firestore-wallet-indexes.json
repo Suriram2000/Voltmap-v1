@@ -1,0 +1,30 @@
+enum PaymentMethodType {
+  card,
+  wallet,
+  upi,
+  bank,
+}
+
+class SavedPaymentMethod {
+  const SavedPaymentMethod({
+    required this.id,
+    required this.type,
+    required this.label,
+    this.lastFour,
+    this.isDefault = false,
+  });
+
+  final String id;
+  final PaymentMethodType type;
+  final String label;
+  final String? lastFour;
+  final bool isDefault;
+
+  String get displayLabel {
+    if (lastFour == null || lastFour!.isEmpty) {
+      return label;
+    }
+
+    return '$label •••• $lastFour';
+  }
+}

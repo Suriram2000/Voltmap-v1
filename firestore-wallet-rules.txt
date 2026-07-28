@@ -1,0 +1,18 @@
+Add these rules inside `match /databases/{database}/documents`:
+
+match /wallets/{userId} {
+  allow read: if request.auth != null
+              && request.auth.uid == userId;
+
+  // Wallet balances should be written by trusted backend services
+  // in production. Client writes are allowed here only for the
+  // current development foundation.
+  allow create, update: if request.auth != null
+                        && request.auth.uid == userId;
+
+  match /transactions/{transactionId} {
+    allow read, create: if request.auth != null
+                        && request.auth.uid == userId;
+    allow update, delete: if false;
+  }
+}
