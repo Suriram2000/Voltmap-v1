@@ -1,33 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'features/splash/splash_screen.dart';
+import 'core/theme/app_theme.dart';
+import 'features/home/home_screen.dart';
+import 'features/settings/application/settings_providers.dart';
 
-class VoltMapApp extends StatelessWidget {
+class VoltMapApp extends ConsumerWidget {
   const VoltMapApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    const brandGreen = Color(0xFF00A86B);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final settings = ref.watch(appSettingsProvider);
 
     return MaterialApp(
-      title: 'VoltMap',
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.system,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: brandGreen,
-          brightness: Brightness.light,
-        ),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: brandGreen,
-          brightness: Brightness.dark,
-        ),
-      ),
-      home: const SplashScreen(),
+      title: 'VoltMap',
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
+      themeMode:
+          settings.valueOrNull?.themeMode ?? ThemeMode.system,
+      home: const HomeScreen(),
     );
   }
 }
