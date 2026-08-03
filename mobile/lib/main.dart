@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'app/voltmap_app.dart';
 
-import 'app.dart';
-import 'core/firebase/firebase_bootstrap.dart';
-
-Future<void> main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
-  await FirebaseBootstrap.initialize();
-
-  runApp(
-    const ProviderScope(
-      child: VoltMapApp(),
-    ),
-  );
+  runApp(const ProviderScope(child: VoltMapApp()));
 }
